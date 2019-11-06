@@ -3,6 +3,9 @@
 
 body{
     font-family: $font-style ;
+    a {
+        color : #17a2b8;
+    }
 }
 
 /*  start navbar */
@@ -19,6 +22,9 @@ body{
     height: 40px;
     border-radius: 100%;
 }
+.view {
+    font-size: .7rem;
+}
 
 nav{ 
     background-color: $colors-primary;
@@ -26,9 +32,12 @@ nav{
     div{
         ul{
             li{
-                a{
-                    color: $colors-gray-light;
+                a{  
+                    color: rgb(219, 219, 219);
                     padding : 0 1rem;
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                    }
                 }
             }
         }
@@ -48,11 +57,10 @@ nav{
 }
 .user2{
     position: absolute;
-    width: 110px;
-    height: 110px;
+    height: 25%;
     border-radius: 100%;
-    top: 65%;
-    left: 29%;
+    top: 87%;
+    left: 37.5%;
 }
 
 .about{
@@ -64,7 +72,7 @@ nav{
     }
     ul{
         li{
-            font-size: .8rem;
+            color : $colors-gray-light;
             padding:.1rem 0;
             i{
                 width: 30px;
@@ -80,7 +88,44 @@ nav{
             padding-left: .5rem;
         }
     }
-    
+    div {
+        div{
+            div{
+                div {
+                    padding: .5rem;
+                }
+            }
+        }
+    }
 }
-
 /* end first colum */
+// second colum
+.com-img {
+    border-radius: 100%;
+    width: 70%;
+}
+.imgimg{
+    width: 80%;
+    border-radius: 50%;
+}
+.main-page {
+    div {
+        div {
+            div {
+                div {
+                    padding: .5rem;
+                }
+                .i {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.footer {
+    div {
+        a {
+            padding-left: 0.5rem;
+        }
+    }
+}
