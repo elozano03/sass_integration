@@ -4,18 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>SASS inté</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="con-tainer d-flex">
-                <a class="navbar-brand" href="#">ICI LOGO</a>
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/brand-white.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -25,30 +26,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="text-white" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a href="#">Profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a href="#">Message</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#">Docs</a>
+                        </li>
+
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <i class="fas fa-bell pr-2"></i><img src="./images/yann.jpg" alt="" class="user">
+
                     </form>
                 </div>
             </div>
@@ -60,43 +54,74 @@
                 <div class="col-12 col-lg-3">
                     <div class="row">
                         <div class="col-12 col-md-4 col-lg-12 pb-5">
-                            <div class="card ">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                            <div class="card">
+                                <div class="profil">
+                                    <img src="https://picsum.photos/150/100" class="card-img-top" alt="...">
+                                    <img class="img-thumbnail user2" src="./images/yann.jpg" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title pt-5">Yann Barthélémy</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <div class="row">
+                                        <div class="col-6 border-right">
+                                            <p>Friends</p><span class="font-weight-bold">12M</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>Enemies</p><span class="font-weight-bold">1</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 col-lg-12 pb-5">
                             <div class="card">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>1</li>
-                                        <li>4</li>
-                                        <li>4</li>
-                                        <li>7</li>
-                                        <li>7</li>
+                                <div class="card-body about">
+                                    <h5>About<a href="#">. Edit</a></h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0"><i class="far fa-calendar"></i>Went to <a
+                                                href="#">Oh,Canada</a></li>
+                                        <li class="list-group-item border-0"><i class="fas fa-user-friends"></i>Became
+                                            friends
+                                            witdth <a href="#">Obama</a></li>
+                                        <li class="list-group-item border-0"><i class="fab fa-github-alt"></i>Worket at
+                                            <a href="#">Github</a></li>
+                                        <li class="list-group-item border-0"><i class="fas fa-home pr-3"></i>Lives
+                                            in <a href="#">San
+                                                Francisco, CA</a></li>
+                                        <li class="list-group-item border-0"><i class="fas fa-map-marker-alt"></i>From
+                                            <a href="#">Seattle,WA</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 col-lg-12 pb-5">
-                            <div class="card">
+                            <div class="card profil-img">
                                 <div class="card-body">
-                                    <h4>Photos <a href="#">Edit</a></h4>
+                                    <h5>Photos <a href="#">. Edit</a></h5>
                                     <div class="row">
-                                        <div class="col-6">
-                                            <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
-                                            <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
-                                            <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                        <div class="col-6 p-0">
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
                                         </div>
-                                        <div class="col-6">
-                                            <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
-                                            <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
-                                            <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                        <div class="col-6 p-0">
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -107,11 +132,18 @@
                 <div class="col-12 col-md-9 col-lg-6">
                     <div class="row">
                         <div class="col-12">
-                            <div class="card">
-                                <div class="card-header text-center">
-                                    <input type="text">icon
+                            <div class="card rounded-0">
+                                <div class="card text-center rounded-top border-0">
+                                    <div class="input-group p-3 ">
+                                        <input type="text" class="form-control" placeholder="Message"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text bg-light " id="basic-addon2"><i
+                                                    class="fas fa-camera"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body border-top">
                                     <div class="row">
                                         <div class="col-2">
                                             <img src="https://picsum.photos/50/50" alt="">
@@ -154,7 +186,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card rounded-0 border-top-0">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-2">img</div>
@@ -166,7 +198,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card rounded-0 border-top-0">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-2">
